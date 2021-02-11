@@ -1,0 +1,35 @@
+/* LOCATION */
+.location {
+    display: flex;
+    justify-content: center;
+    padding: 1.1rem;
+    background-color: rgb(230, 230, 230);
+
+    i {
+        margin-right: 1rem;
+    }
+
+    span {
+        font-weight: 700;
+    }
+}
+
+
+
+/* INTRODUCTION */
+.introduction {
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    padding: 2rem;
+
+    h2 {
+        margin: 0;
+        padding: 0 2rem;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+    }
+}
