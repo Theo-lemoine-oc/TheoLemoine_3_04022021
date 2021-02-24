@@ -48,9 +48,10 @@ $gradient-color: rgb(171, 94, 220) linear-gradient(0deg, rgba(171, 94, 220, 1) 0
         filter: brightness(110%);
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
     }
-    a {
-        text-decoration: none;
-    }
+}
+
+a {
+    text-decoration: none;
 }
 
 
