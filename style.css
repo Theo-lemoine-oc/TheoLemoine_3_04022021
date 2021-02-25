@@ -195,13 +195,13 @@ footer li i {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  position: relative;
 }
 .menu a {
   margin: 0.5rem 0;
   box-shadow: 3px 3px 12px 0px #d1d1d1;
   border-radius: 1rem;
   transition: 0.2s;
+  position: relative;
 }
 .menu a:hover {
   transform: scale(1.05);
@@ -215,13 +215,13 @@ footer li i {
 .menu .wignet-new {
   background-color: #99E2D0;
   color: #278870;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.2rem;
-  position: absolute;
-  top: 1rem;
-  right: 0.75rem;
   font-weight: 600;
   font-size: 0.95rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 }
 .menu .bottom-menu {
   padding: 1rem;
