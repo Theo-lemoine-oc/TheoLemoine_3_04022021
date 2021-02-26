@@ -195,7 +195,6 @@ footer li i {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  position: relative;
 }
 .menu a {
   margin: 0.5rem 0;
