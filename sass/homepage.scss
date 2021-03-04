@@ -147,7 +147,9 @@
         align-items: center;
     }
     .menu-content {
+        display: flex;
         flex: 1;
+        flex-direction: column;
     }
     h3 {
         color: #000;
@@ -157,6 +159,7 @@
         color: #000;
         font-size: 1.125rem;
         font-weight: 300;
+        margin: 0;
     }
     .menu-favorite {
         height: 1rem;
