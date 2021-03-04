@@ -1,0 +1,181 @@
+/* LOCATION */
+
+.location {
+    display: flex;
+    justify-content: center;
+    padding: 1.1rem;
+    background-color: rgb(230, 230, 230);
+    i {
+        margin-right: 1rem;
+    }
+    span {
+        font-weight: 700;
+    }
+}
+
+
+/* INTRODUCTION */
+
+.introduction {
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    padding: 2rem;
+    padding-bottom: 4rem;
+    h2 {
+        margin: 0;
+        padding: 0 2rem;
+    }
+    p {
+        font-weight: 300;
+        font-size: 1.1rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+
+/* OPERATION */
+
+.operation {
+    padding: 2rem;
+    padding-bottom: 4rem;
+    .operation-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    ol {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        counter-reset: counterList;
+    }
+    li {
+        padding: 1.5rem;
+        margin: 1rem 0 1.5rem 0.75rem;
+        border-radius: 1.25rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+        background-color: rgb(248, 248, 248);
+        display: flex;
+        transition: .3s;
+        cursor: pointer;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:hover {
+            background-color: rgba($color: #9356DC, $alpha: .1);
+            transition: .3s;
+        }
+        &:hover i {
+            color: $color-primary;
+            transition: .3s;
+        }
+        &::before {
+            counter-increment: counterList 1;
+            content: counter(counterList);
+            background: $color-primary;
+            border-radius: 100px;
+            height: 1.5rem;
+            width: 1.5rem;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 2rem;
+        }
+    }
+    i {
+        margin: 0 1.5rem 0 0.5rem;
+        color: rgb(99, 99, 99);
+        font-size: 1.1rem;
+        transition: .3s;
+    }
+    li:last-child o {
+        color: $color-primary;
+    }
+    span {
+        font-weight: 500;
+    }
+}
+
+
+/* RESTAURANTS */
+
+.restaurants {
+    padding: 2rem;
+    background-color: whitesmoke;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    a {
+        margin: .5rem 0;
+        box-shadow: 3px 3px 12px 0px rgba(209, 209, 209, 1);
+        border-radius: 1rem;
+        transition: .2s;
+        position: relative;
+    }
+    a:hover {
+        transform: scale(1.05);
+        transition: .2s;
+    }
+    img {
+        height: 10rem;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .wignet-new {
+        background-color: $color-tertiary;
+        color: darken($color-tertiary, 40%);
+        padding: .5rem 1rem;
+        border-radius: .2rem;
+        font-weight: 600;
+        font-size: .95rem;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+    .bottom-menu {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    .menu-content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+    h3 {
+        color: #000;
+        margin: 0 0 .25rem 0;
+    }
+    span {
+        color: #000;
+        font-size: 1.125rem;
+        font-weight: 300;
+        margin: 0;
+    }
+    .menu-favorite {
+        height: 1rem;
+        width: 1rem;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon-empty {
+        display: initial;
+        font-size: 1.6rem;
+        color: #000;
+        font-weight: 300;
+    }
+    .icon-fill {
+        display: none;
+    }
+}
