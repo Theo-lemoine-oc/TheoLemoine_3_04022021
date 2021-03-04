@@ -332,6 +332,7 @@ header i {
   position: absolute;
   left: 0;
   bottom: 0;
+  transform: 0.5s;
 }
 .menu-content .choice-menu {
   background-color: #fff;
@@ -353,13 +354,14 @@ header i {
 .menu-content .choice-menu__title {
   margin: 0;
   overflow: hidden;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-bottom: 0.25rem;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .menu-content .choice-menu__description {
   margin: 0;
+  font-size: 0.9rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

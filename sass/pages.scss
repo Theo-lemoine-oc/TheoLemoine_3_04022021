@@ -73,6 +73,7 @@ header {
                 position: absolute;
                 left: 0;
                 bottom: 0;
+                transform: .5s;
             }
         }
     }
@@ -96,13 +97,14 @@ header {
         &__title {
             margin: 0;
             overflow: hidden;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             padding-bottom: .25rem;
             white-space: nowrap;
             text-overflow: ellipsis;
         }
         &__description {
             margin: 0;
+            font-size: .9rem;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
