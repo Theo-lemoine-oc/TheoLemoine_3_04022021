@@ -44,6 +44,7 @@ $gradient-color: rgb(171, 94, 220) linear-gradient(0deg, rgba(171, 94, 220, 1) 0
     cursor: pointer;
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
     transition: 0.25s;
+    outline: none;
     &:hover {
         filter: brightness(110%);
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
