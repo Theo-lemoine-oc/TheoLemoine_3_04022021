@@ -1,3 +1,32 @@
+/* Loading page (dots effect) */
+
+#loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    .loading-dots>div {
+        width: 2rem;
+        height: 2rem;
+        background-color: #000;
+        border-radius: 50%;
+        display: inline-block;
+        animation: 1.5s bounce infinite ease-in-out both;
+    }
+    .loading-dots .bounce {
+        animation-delay: -0.30s;
+    }
+    .loading-dots .bounce2 {
+        animation-delay: -0.15s;
+    }
+}
+
+
 /* LOCATION */
 
 .location {
@@ -174,6 +203,7 @@
         font-size: 1.6rem;
         color: #000;
         font-weight: 300;
+        cursor: pointer;
     }
     .icon-fill {
         display: none;

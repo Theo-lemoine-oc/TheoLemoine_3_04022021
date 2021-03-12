@@ -147,18 +147,6 @@ header {
 }
 
 
-/* Animation for icon confirmation */
-
-@keyframes rotation {
-    from {
-        transform: rotate(-540deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-
 /* Command button */
 
 .command-btn {
