@@ -10,7 +10,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    animation: 2s loader-timer cubic-bezier(0, 0, 0.99, 0.09);
+    animation: 2s loader-timer cubic-bezier(0, 0, 1, -0.45);
     animation-fill-mode: forwards;
     z-index: 3;
     overflow: hidden;
