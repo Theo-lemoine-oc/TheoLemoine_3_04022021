@@ -11,6 +11,15 @@
     }
 }
 
+@keyframes loader-timer {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
 /* Animation for icon confirmation pages menus */
 

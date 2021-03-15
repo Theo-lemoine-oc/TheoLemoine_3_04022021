@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <!-- Loading page (dots effect) -->
+    <!-- Loading page (dots effect)-->
     <div id="loader">
         <h1 class="title__main center">ohmyfood</h1>
         <div class="loading-dots">
@@ -80,7 +80,7 @@
             <section class="restaurants">
                 <h2>Restaurants</h2>
 
-                <div class="menu">
+                <div class="menu-restaurants">
                     <!-- Choice 1 -->
                     <a href="pages/la-palette-du-gout.html">
                         <img src="img/restaurants/la_palette_du_gout.jpg" alt="La palette du goût">
@@ -91,8 +91,11 @@
                                 <span>Ménilmontant</span>
                             </div>
                             <div class="menu-favorite">
-                                <i class="far fa-heart icon-empty"></i>
-                                <i class="fas fa-heart icon-fill"></i>
+                                <input type="checkbox" name="heart-checkbox" class="heart-input">
+                                <label for="heart-checkbox" class="heart-label">
+                                    <i class="far fa-heart icon-empty"></i>
+                                    <i class="fas fa-heart icon-fill"></i>
+                                </label>
                             </div>
                         </div>
                     </a>

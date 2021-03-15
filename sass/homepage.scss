@@ -10,6 +10,10 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    animation: 2s loader-timer cubic-bezier(0, 0, 0.99, 0.09);
+    animation-fill-mode: forwards;
+    z-index: 3;
+    overflow: hidden;
     .loading-dots>div {
         width: 2rem;
         height: 2rem;
@@ -136,10 +140,9 @@
 
 .restaurants {
     padding: 2rem;
-    background-color: whitesmoke;
 }
 
-.menu {
+.menu-restaurants {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -198,6 +201,7 @@
         align-items: center;
         justify-content: center;
     }
+    .heart-input:checked~.heart-label {}
     .icon-empty {
         display: initial;
         font-size: 1.6rem;
@@ -207,5 +211,41 @@
     }
     .icon-fill {
         display: none;
+    }
+}
+
+
+/* DESKTOP VERSION */
+
+@media all and (min-width: 1024px) {
+    /* Operation section */
+    .operation h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .operation-content {
+        display: flex;
+        flex-direction: row;
+        ol {
+            width: 30rem;
+            li::before {
+                left: 44.5rem;
+            }
+        }
+    }
+    /* Restaurants section */
+    .restaurants h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .menu-restaurants {
+        margin: 0 20rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        a {
+            width: 100%;
+            margin: 0 2rem;
+        }
     }
 }
