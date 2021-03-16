@@ -13,7 +13,7 @@
     animation: 2s loader-timer cubic-bezier(0, 0, 1, -0.45);
     animation-fill-mode: forwards;
     z-index: 3;
-    overflow: hidden;
+    overflow-y: hidden;
     .loading-dots>div {
         width: 2rem;
         height: 2rem;
@@ -152,15 +152,21 @@
         border-radius: 1rem;
         transition: .2s;
         position: relative;
+        overflow: hidden;
+        width: 100%;
     }
     a:hover {
         transform: scale(1.05);
         transition: .2s;
     }
-    img {
-        height: 10rem;
+    .image-restaurants {
         width: 100%;
-        border-radius: 1rem 1rem 0 0;
+        height: 10rem;
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 1rem 1rem 0 0;
+        }
     }
     .wignet-new {
         background-color: $color-tertiary;
@@ -227,9 +233,9 @@
         display: flex;
         flex-direction: row;
         ol {
-            width: 30rem;
-            li::before {
-                left: 44.5rem;
+            li {
+                display: flex;
+                justify-content: center;
             }
         }
     }
@@ -241,9 +247,11 @@
     .menu-restaurants {
         margin: 0 20rem;
         display: flex;
+        justify-content: center;
         flex-direction: row;
         flex-wrap: nowrap;
         a {
+            min-width: 12rem;
             width: 100%;
             margin: 0 2rem;
         }
