@@ -1,3 +1,36 @@
+/* Loading page (dots effect) */
+
+#loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    animation: 2s loader-timer cubic-bezier(0, 0, 1, -0.45);
+    animation-fill-mode: forwards;
+    z-index: 3;
+    overflow-y: hidden;
+    .loading-dots>div {
+        width: 2rem;
+        height: 2rem;
+        background-color: #000;
+        border-radius: 50%;
+        display: inline-block;
+        animation: 1.5s bounce infinite ease-in-out both;
+    }
+    .loading-dots .bounce {
+        animation-delay: -0.30s;
+    }
+    .loading-dots .bounce2 {
+        animation-delay: -0.15s;
+    }
+}
+
+
 /* LOCATION */
 
 .location {
@@ -8,8 +41,18 @@
     i {
         margin-right: 1rem;
     }
-    span {
+    input {
         font-weight: 700;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        font-size: 1rem;
+        color: #000;
+        width: 8rem;
+    }
+    input::placeholder {
+        color: #000;
+        font-size: 1rem;
     }
 }
 
@@ -107,10 +150,9 @@
 
 .restaurants {
     padding: 2rem;
-    background-color: whitesmoke;
 }
 
-.menu {
+.menu-restaurants {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -120,15 +162,21 @@
         border-radius: 1rem;
         transition: .2s;
         position: relative;
+        overflow: hidden;
+        width: 100%;
     }
     a:hover {
         transform: scale(1.05);
         transition: .2s;
     }
-    img {
-        height: 10rem;
+    .image-restaurants {
         width: 100%;
-        border-radius: 1rem 1rem 0 0;
+        height: 10rem;
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 1rem 1rem 0 0;
+        }
     }
     .wignet-new {
         background-color: $color-tertiary;
@@ -169,13 +217,53 @@
         align-items: center;
         justify-content: center;
     }
+    .heart-input:checked~.heart-label {}
     .icon-empty {
         display: initial;
         font-size: 1.6rem;
         color: #000;
         font-weight: 300;
+        cursor: pointer;
     }
     .icon-fill {
         display: none;
+    }
+}
+
+
+/* DESKTOP VERSION */
+
+@media all and (min-width: 1024px) {
+    /* Operation section */
+    .operation h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .operation-content {
+        display: flex;
+        flex-direction: row;
+        ol {
+            li {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    /* Restaurants section */
+    .restaurants h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .menu-restaurants {
+        margin: 0 20rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        a {
+            min-width: 12rem;
+            width: 100%;
+            margin: 0 2rem;
+        }
     }
 }

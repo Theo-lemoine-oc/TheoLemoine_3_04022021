@@ -43,6 +43,24 @@ header {
             margin-right: 2rem;
         }
     }
+    .menu-favorite {
+        height: 1rem;
+        width: 1rem;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon-empty {
+        display: initial;
+        font-size: 1.6rem;
+        color: #000;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    .icon-fill {
+        display: none;
+    }
 }
 
 
@@ -51,6 +69,7 @@ header {
 .menu-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     /* Menus */
     .menus {
         margin-top: 2rem;
@@ -86,6 +105,7 @@ header {
         border-radius: .75rem;
         overflow: hidden;
         box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, .1);
+        width: 19.5rem;
         cursor: pointer;
         &:last-child {
             margin-bottom: 0;
@@ -147,18 +167,6 @@ header {
 }
 
 
-/* Animation for icon confirmation */
-
-@keyframes rotation {
-    from {
-        transform: rotate(-540deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-
 /* Command button */
 
 .command-btn {
@@ -169,5 +177,19 @@ header {
     .btn {
         width: 12rem;
         height: 3rem;
+    }
+}
+
+
+/* SEMI DESKTOP VERSION */
+
+@media all and (min-width: 752px) {
+    .menu-content {
+        .menus {
+            margin: 0;
+        }
+        &__title {
+            text-align: center;
+        }
     }
 }

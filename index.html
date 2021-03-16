@@ -22,6 +22,16 @@
 </head>
 
 <body>
+    <!-- Loading page (dots effect)
+    <div id="loader">
+        <h1 class="title__main center">ohmyfood</h1>
+        <div class="loading-dots">
+            <div class="bounce"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>-->
+
     <!-- HEADER -->
     <header>
         <!-- Logo -->
@@ -33,14 +43,14 @@
         <!-- Location -->
         <section class="location">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Paris, Belleville</span>
+            <input placeholder="Paris, Belleville">
         </section>
 
         <!-- Introduction -->
         <section class="introduction">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <a href="#" class="btn">Explorer nos restaurants</a>
+            <button href="#" class="btn">Explorer nos restaurants</button>
         </section>
 
         <!-- OPERATIONS -->
@@ -69,10 +79,12 @@
         <section class="restaurants">
             <h2>Restaurants</h2>
 
-            <div class="menu">
+            <div class="menu-restaurants">
                 <!-- Choice 1 -->
                 <a href="pages/la-palette-du-gout.html">
-                    <img src="img/restaurants/la_palette_du_gout.jpg" alt="La palette du goût">
+                    <div class="image-restaurants">
+                        <img src="img/restaurants/la_palette_du_gout.jpg" alt="La palette du goût">
+                    </div>
                     <span class="wignet-new">Nouveau</span>
                     <div class="bottom-menu">
                         <div class="menu-content">
@@ -80,15 +92,20 @@
                             <span>Ménilmontant</span>
                         </div>
                         <div class="menu-favorite">
-                            <i class="far fa-heart icon-empty"></i>
-                            <i class="fas fa-heart icon-fill"></i>
+                            <input type="checkbox" name="heart-checkbox" class="heart-input">
+                            <label for="heart-checkbox" class="heart-label">
+                                    <i class="far fa-heart icon-empty"></i>
+                                    <i class="fas fa-heart icon-fill"></i>
+                                </label>
                         </div>
                     </div>
                 </a>
 
                 <!-- Choice 2 -->
                 <a href="pages/la-note-enchantee.html">
-                    <img src="img/restaurants/la_note_enchantee.jpg" alt="La palette du goût">
+                    <div class="image-restaurants">
+                        <img src="img/restaurants/la_note_enchantee.jpg" alt="La palette du goût">
+                    </div>
                     <span class="wignet-new">Nouveau</span>
                     <div class="bottom-menu">
                         <div class="menu-content">
@@ -104,7 +121,9 @@
 
                 <!-- Choice 3 -->
                 <a href="pages/a-la-francaise.html">
-                    <img src="img/restaurants/a_la_francaise.jpg" alt="La palette du goût">
+                    <div class="image-restaurants">
+                        <img src="img/restaurants/a_la_francaise.jpg" alt="La palette du goût">
+                    </div>
                     <div class="bottom-menu">
                         <div class="menu-content">
                             <h3>À la française</h3>
@@ -119,7 +138,9 @@
 
                 <!-- Choice 4 -->
                 <a href="pages/le-delice-des-sens.html">
-                    <img src="img/restaurants/le_delice_des_sens.jpg" alt="La palette du goût">
+                    <div class="image-restaurants">
+                        <img src="img/restaurants/le_delice_des_sens.jpg" alt="La palette du goût">
+                    </div>
                     <div class="bottom-menu">
                         <div class="menu-content">
                             <h3>Le délice des sens</h3>
@@ -154,7 +175,6 @@
             </li>
         </ul>
     </footer>
-
 
 </body>
 
