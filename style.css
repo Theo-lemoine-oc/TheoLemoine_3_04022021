@@ -429,6 +429,7 @@ header i {
   border-radius: 0.75rem;
   overflow: hidden;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  width: 19.5rem;
   cursor: pointer;
 }
 .menu-content .choice-menu:last-child {
