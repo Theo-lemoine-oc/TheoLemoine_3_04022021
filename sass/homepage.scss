@@ -41,8 +41,18 @@
     i {
         margin-right: 1rem;
     }
-    span {
+    input {
         font-weight: 700;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        font-size: 1rem;
+        color: #000;
+        width: 8rem;
+    }
+    input::placeholder {
+        color: #000;
+        font-size: 1rem;
     }
 }
 
