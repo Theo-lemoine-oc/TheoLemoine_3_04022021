@@ -71,7 +71,7 @@ header {
 
 /* Menu content */
 
-.menu-content {
+.menus-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -81,8 +81,18 @@ header {
         max-width: 100%;
         overflow: hidden;
         padding: 0 1rem;
+        animation-name: apparition;
         &:first-child {
             margin: 0;
+            animation-duration: 2s;
+        }
+        &:nth-child(2) {
+            margin: 0;
+            animation-duration: 3s;
+        }
+        &:last-child {
+            margin: 0;
+            animation-duration: 4s;
         }
         &__title {
             position: relative;

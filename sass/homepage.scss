@@ -217,17 +217,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .heart-input:checked~.heart-label {}
-    .icon-empty {
-        display: initial;
-        font-size: 1.6rem;
-        color: #000;
-        font-weight: 300;
-        cursor: pointer;
-    }
-    .icon-fill {
-        display: none;
+        .icon-fill {
+            display: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+        .icon-empty {
+            display: unset;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+        .icon-empty:hover {
+            display: none;
+        }
     }
 }
 
