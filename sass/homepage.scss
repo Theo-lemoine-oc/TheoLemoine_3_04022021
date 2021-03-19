@@ -3,10 +3,9 @@
 #loader {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 86.5rem;
     background-color: #fff;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
@@ -24,10 +23,29 @@
     }
     .loading-dots .bounce {
         animation-delay: -0.30s;
+        background: linear-gradient(0deg, rgba(171, 94, 220, 1) 0%, rgba(223, 111, 218, 1) 58%);
     }
     .loading-dots .bounce2 {
         animation-delay: -0.15s;
+        background: linear-gradient(0deg, rgba(171, 94, 220, 1) 0%, rgba(223, 111, 218, 1) 58%);
     }
+    .loading-dots .bounce3 {
+        background: linear-gradient(0deg, rgba(171, 94, 220, 1) 0%, rgba(223, 111, 218, 1) 58%);
+    }
+    .loader-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25rem;
+    }
+    h1 {
+        background: linear-gradient(0deg, rgba(171, 94, 220, 1) 0%, rgba(223, 111, 218, 1) 58%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.page-content {
+    z-index: 1;
 }
 
 
@@ -171,9 +189,10 @@
     }
     .image-restaurants {
         width: 100%;
-        height: 10rem;
+        height: 8rem;
+        overflow: hidden;
         img {
-            height: 100%;
+            height: auto;
             width: 100%;
             border-radius: 1rem 1rem 0 0;
         }
@@ -216,17 +235,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .heart-input:checked~.heart-label {}
-    .icon-empty {
-        display: initial;
-        font-size: 1.6rem;
-        color: #000;
-        font-weight: 300;
-        cursor: pointer;
-    }
-    .icon-fill {
-        display: none;
+        .icon-fill {
+            display: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+        .icon-empty {
+            display: unset;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+        .icon-empty:hover {
+            display: none;
+        }
     }
 }
 
@@ -262,6 +283,36 @@
         flex-wrap: nowrap;
         a {
             min-width: 12rem;
+            width: 100%;
+            margin: 0 2rem;
+        }
+    }
+}
+
+@media all and (min-width: 1260px) {
+    /* Restaurants section */
+    .restaurants h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .menu-restaurants {
+        a {
+            min-width: 16rem;
+            width: 100%;
+            margin: 0 2rem;
+        }
+    }
+}
+
+@media all and (min-width: 1400px) {
+    /* Restaurants section */
+    .restaurants h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .menu-restaurants {
+        a {
+            min-width: 18rem;
             width: 100%;
             margin: 0 2rem;
         }
