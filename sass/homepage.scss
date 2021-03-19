@@ -254,6 +254,9 @@
 
 /* DESKTOP VERSION */
 
+
+/* Little desktop version */
+
 @media all and (min-width: 1024px) {
     /* Operation section */
     .operation h2 {
@@ -289,6 +292,9 @@
     }
 }
 
+
+/* Normal desktop version */
+
 @media all and (min-width: 1260px) {
     /* Restaurants section */
     .restaurants h2 {
@@ -303,6 +309,9 @@
         }
     }
 }
+
+
+/* Big desktop version */
 
 @media all and (min-width: 1400px) {
     /* Restaurants section */
