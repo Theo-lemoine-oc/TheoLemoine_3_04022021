@@ -103,7 +103,6 @@ footer li i {
   animation-fill-mode: forwards;
   z-index: 3;
   overflow-y: hidden;
-  color: #ab5edc linear-gradient(0deg, #ab5edc 0%, #df6fda 58%);
 }
 #loader .loading-dots > div {
   width: 2rem;
@@ -115,14 +114,24 @@ footer li i {
 }
 #loader .loading-dots .bounce {
   animation-delay: -0.3s;
+  background: linear-gradient(0deg, #ab5edc 0%, #df6fda 58%);
 }
 #loader .loading-dots .bounce2 {
   animation-delay: -0.15s;
+  background: linear-gradient(0deg, #ab5edc 0%, #df6fda 58%);
+}
+#loader .loading-dots .bounce3 {
+  background: linear-gradient(0deg, #ab5edc 0%, #df6fda 58%);
 }
 #loader .loader-content {
   display: flex;
   flex-direction: column;
   margin-top: 25rem;
+}
+#loader h1 {
+  background: linear-gradient(0deg, #ab5edc 0%, #df6fda 58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .page-content {

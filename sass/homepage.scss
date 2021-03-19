@@ -13,8 +13,6 @@
     animation-fill-mode: forwards;
     z-index: 3;
     overflow-y: hidden;
-    color: rgb(171, 94, 220) linear-gradient(0deg, rgba(171, 94, 220, 1) 0%, rgba(223, 111, 218, 1) 58%);
-    ;
     .loading-dots>div {
         width: 2rem;
         height: 2rem;
@@ -25,14 +23,24 @@
     }
     .loading-dots .bounce {
         animation-delay: -0.30s;
+        background: linear-gradient(0deg, rgba(171, 94, 220, 1) 0%, rgba(223, 111, 218, 1) 58%);
     }
     .loading-dots .bounce2 {
         animation-delay: -0.15s;
+        background: linear-gradient(0deg, rgba(171, 94, 220, 1) 0%, rgba(223, 111, 218, 1) 58%);
+    }
+    .loading-dots .bounce3 {
+        background: linear-gradient(0deg, rgba(171, 94, 220, 1) 0%, rgba(223, 111, 218, 1) 58%);
     }
     .loader-content {
         display: flex;
         flex-direction: column;
         margin-top: 25rem;
+    }
+    h1 {
+        background: linear-gradient(0deg, rgba(171, 94, 220, 1) 0%, rgba(223, 111, 218, 1) 58%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 
