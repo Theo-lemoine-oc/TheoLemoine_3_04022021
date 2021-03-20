@@ -82,17 +82,24 @@ header {
         overflow: hidden;
         padding: 0 1rem;
         animation-name: apparition;
+        animation-fill-mode: forwards;
         &:first-child {
             margin: 0;
+            opacity: 0;
+            animation-delay: 0;
             animation-duration: 2s;
         }
         &:nth-child(2) {
             margin: 0;
-            animation-duration: 3s;
+            opacity: 0;
+            animation-delay: .3s;
+            animation-duration: 2s;
         }
         &:last-child {
             margin: 0;
-            animation-duration: 4s;
+            opacity: 0;
+            animation-delay: .6s;
+            animation-duration: 2s;
         }
         &__title {
             position: relative;
@@ -191,19 +198,5 @@ header {
     .btn {
         width: 12rem;
         height: 3rem;
-    }
-}
-
-
-/* SEMI DESKTOP VERSION */
-
-@media all and (min-width: 752px) {
-    .menu-content {
-        .menus {
-            margin: 0;
-        }
-        &__title {
-            text-align: center;
-        }
     }
 }
