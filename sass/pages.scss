@@ -49,22 +49,42 @@ header {
         }
     }
     .menu-favorite {
-        height: 1rem;
-        width: 1rem;
+        height: 2rem;
+        width: 2rem;
         padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .icon-empty {
-        display: initial;
-        font-size: 1.6rem;
-        color: #000;
-        font-weight: 300;
-        cursor: pointer;
-    }
-    .icon-fill {
-        display: none;
+        position: relative;
+        overflow: hidden;
+        .icon-fill {
+            color: $color-primary;
+            opacity: 0;
+            margin: 0;
+            font-size: 1.6rem;
+            cursor: pointer;
+            transition: .2s linear;
+            position: absolute;
+            z-index: 2;
+            background: linear-gradient(0deg, rgba(171, 94, 220, 1) 0%, rgba(223, 111, 218, 1) 58%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .icon-empty {
+            margin: 0;
+            color: $color-primary;
+            opacity: 1;
+            font-size: 1.6rem;
+            cursor: pointer;
+            transition: .2s linear;
+            position: absolute;
+        }
+        &:hover .icon-fill {
+            opacity: 1;
+        }
+        &:hover .icon-empty {
+            opacity: 0;
+        }
     }
 }
 
