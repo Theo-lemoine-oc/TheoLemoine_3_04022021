@@ -515,7 +515,7 @@ header i {
 .menus-content .menus:first-child {
   margin: 0;
   opacity: 0;
-  animation-delay: 0;
+  animation-delay: 0s;
   animation-duration: 2s;
 }
 .menus-content .menus:nth-child(2) {
