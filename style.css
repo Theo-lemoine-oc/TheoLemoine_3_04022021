@@ -322,6 +322,7 @@ footer li i {
   overflow: hidden;
 }
 .menu-restaurants .menu-favorite .icon-fill {
+  color: #9356DC;
   opacity: 0;
   font-size: 1.6rem;
   cursor: pointer;
@@ -333,6 +334,7 @@ footer li i {
   -webkit-text-fill-color: transparent;
 }
 .menu-restaurants .menu-favorite .icon-empty {
+  color: #9356DC;
   opacity: 1;
   font-size: 1.6rem;
   cursor: pointer;
@@ -456,22 +458,42 @@ header i {
   margin-right: 2rem;
 }
 .menu .menu-favorite {
-  height: 1rem;
-  width: 1rem;
+  height: 2rem;
+  width: 2rem;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
-.menu .icon-empty {
-  display: initial;
+.menu .menu-favorite .icon-fill {
+  color: #9356DC;
+  opacity: 0;
+  margin: 0;
   font-size: 1.6rem;
-  color: #000;
-  font-weight: 300;
   cursor: pointer;
+  transition: 0.2s linear;
+  position: absolute;
+  z-index: 2;
+  background: linear-gradient(0deg, #ab5edc 0%, #df6fda 58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.menu .icon-fill {
-  display: none;
+.menu .menu-favorite .icon-empty {
+  margin: 0;
+  color: #9356DC;
+  opacity: 1;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 0.2s linear;
+  position: absolute;
+}
+.menu .menu-favorite:hover .icon-fill {
+  opacity: 1;
+}
+.menu .menu-favorite:hover .icon-empty {
+  opacity: 0;
 }
 
 /* Menu content */
